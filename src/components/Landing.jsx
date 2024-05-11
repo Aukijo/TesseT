@@ -6,7 +6,8 @@ import Links from './Links'
 export default function Landing() {
   return (
     <div>
-      <Links/>
+      <h1>Welcome to TESSET Technologies</h1>
+      <h2>This is a Test</h2>
     </div>
   )
 }
