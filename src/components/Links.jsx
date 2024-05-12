@@ -8,7 +8,6 @@ export default function Links() {
             <a href="/" className={links_style.links}>Products</a>
             <a href="/" className={links_style.links}>About</a>
             <a href="/" className={links_style.links}>Contact Us</a>
-            
           </div>
     </div>
   )

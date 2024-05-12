@@ -1,16 +1,17 @@
 import React, { useState } from 'react'
 import header_style from '../modules/Header.module.css'
-import show from '../resources/ProfileAsset 1.svg'
-import hide from '../resources/ProfileAsset 3.svg'
+import show from '../resources/ProfileOpen.svg'
+import hide from '../resources/ProfileClose.svg'
 import Links from './Links'
 
 export default function Header() {
   const [shown,setShown] = useState(true);
   const [icon,setIcon] = useState(show);
   
-  const showLinks =()=>{
+  const [showMenu,setShowMenu] = useState(header_style.nav_menu_close)
+  const buttonChange =()=>{
    setIcon(icon === show ? hide:show)
-
+   setShowMenu(showMenu === header_style.nav_menu_close ? header_style.nav_menu_open:header_style.nav_menu_close)
   }
 
   return (
@@ -42,15 +43,16 @@ export default function Header() {
             </li>
           </ul>
 
-          <button onClick={showLinks} className={header_style.show_button}>
+          <button onClick={buttonChange} className={header_style.show_button}>
             <img className={header_style.show_link} src={icon} alt={shown ? "Hidden":"Shown"} />
           </button>
           
         </div>
-        <div className={header_style.nav_menu}>
+      </div>
+
+      <div className={showMenu}>
           <Links/>
         </div>
-      </div>
     </div>
   )
 }
