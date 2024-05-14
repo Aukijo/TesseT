@@ -1,15 +1,17 @@
-import Header from './components/Header'
-import Landing from './components/Landing';
+import LandingPage from './components/LandingPage'
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
     <div className="App">
       <header>
-        <div className='container'>
-          <Header></Header>
-        </div>
+        <Navbar/>
       </header>
-      <Landing/>
+      <section id='landing-contents'>
+        <LandingPage/>
+      </section>
+      
     </div>
   );
 }

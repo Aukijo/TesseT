@@ -6,17 +6,11 @@
   --color-secondary: #041119;
   --color-accent1: #fa204a;
   --color-accent2: #211ef1;
-  
+  --outline: .5px solid #f03bbd;
 }
 .container {
   width: min(1080px,95%);
   margin: 0 auto;
-}
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  outline: 1px red solid;
 }
 body {
   margin: 0;
