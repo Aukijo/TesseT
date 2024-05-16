@@ -1,10 +1,10 @@
 .landing_content { 
-    height: 90vh;
+    height: 75vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 50px auto;
-    
+    margin: 0 25px;
+
 }
 .taglines_cont, .component_img_cont{ 
     margin: 0px 25px;

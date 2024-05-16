@@ -9,6 +9,9 @@ function App() {
         <Navbar/>
       </header>
       <section id='landing-contents'>
+        <div id='ad-banner'>
+          Put Ads Here
+        </div>
         <LandingPage/>
       </section>
       

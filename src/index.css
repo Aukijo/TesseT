@@ -2,8 +2,8 @@
   --mainFont: 'Jost',sans-serif;
   --secondaryFont: 'Teachers',sans-serif;
 
-  --color-dominant: #d6fffd;
-  --color-secondary: #041119;
+  --color-dominant: #fefefe;
+  --color-secondary: #2a272c;
   --color-accent1: #fa204a;
   --color-accent2: #211ef1;
   --outline: .5px solid #f03bbd;
@@ -25,4 +25,11 @@ code {
     monospace;
 }
 
+#ad-banner {
+  margin: 45px 25px 0 25px;
+  height: 150px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
