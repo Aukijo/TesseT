@@ -3,7 +3,7 @@ import style from '../modules/Navbar.module.css'
 
 export default function Navbar() {
   return (
-    <div className={`${style.nav_content} container`}>
+    <div className={`${style.nav_content}`}>
       <div className={style.logo_cont}>
         <div className={style.logo}>Logo</div>
       </div>
