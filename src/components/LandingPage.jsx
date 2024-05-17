@@ -3,6 +3,8 @@ import style from '../modules/LandingPage.module.css'
 import showcase from '../resources/components.png'
 export default function ContentHolder() {
   return (
+
+    
     <div className={`${style.landing_content}`}>
       <div className={style.taglines_cont}>
         <div className={style.content1}>
