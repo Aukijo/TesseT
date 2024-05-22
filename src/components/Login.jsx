@@ -47,17 +47,17 @@ export default function Login() {
             UserEmail: userRegEmail.current.value,
             userPassword: userRegPass.current.value,
         }
-        axios.post('http://localhost/tesset_api/user/register', userDetails)
-              .then(response => {
-                console.log(response.status);
-                userRegName.current.value = '';
-                userRegEmail.current.value = '';
-                userRegPass.current.value = '';
-              })
-              .catch(error => {
-                console.error('There was an error submitting the form!', error);
-              });
-    }
+        axios.post('https://xtessetx.000webhostapp.com/Index.php', userDetails)
+        .then((response) => {
+        console.log(response.status);
+        userRegName.current.value = '';
+        userRegEmail.current.value = '';
+        userRegPass.current.value = '';
+      })
+      .catch((error) => {
+        console.error('There was an error submitting the form!', error);
+      });
+  }
   return (
     <div>
         {/*action="will send to php file" method = 'post'*/}
