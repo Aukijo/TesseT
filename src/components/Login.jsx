@@ -47,7 +47,7 @@ export default function Login() {
             UserEmail: userRegEmail.current.value,
             userPassword: userRegPass.current.value,
         }
-        axios.post('https://xtessetx.000webhostapp.com/index.php', userDetails)
+        axios.post('https://xtessetx.000webhostapp.com/', userDetails)
         .then((response) => {
         console.log(response.status);
         userRegName.current.value = '';
